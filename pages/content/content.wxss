@@ -1,0 +1,68 @@
+/* pages/content.wxss */
+.view{
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+.title{
+  margin-left: 20rpx
+}
+
+.title .titleText{
+  font-size: 40rpx
+}
+
+.from{
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: rgb(153,153,153)
+}
+
+.read{
+  margin-left: 40rpx;
+  font-size: 28rpx;
+  color: rgb(153,153,153)
+}
+
+i-button .i-buttonLog{
+  margin: 0;
+  padding: 0;
+  width: 140rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  line-height: 200%
+}
+
+i-button{
+  position: absolute;
+  right: 5%
+}
+
+.textFirst{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  width: 95%
+}
+
+.textFirst rich-text{
+  text-indent: 1em
+}
+
+.image image{
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+  width: 95%
+}
+
+.text{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  width: 95%;
+  overflow-x: hidden
+}
+
+.text rich-text{
+  text-indent: 2em
+}

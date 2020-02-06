@@ -1,0 +1,28 @@
+<!--pages/content.wxml-->
+<view class="view">
+  <view class="title">
+    <text class="titleText">{{title}}</text>
+  </view>
+  <view style="height: 50rpx; margin-top: 10rpx">
+    <text class="from">{{fromNews}}</text>
+    <text class="read">{{read}}阅读</text>
+    <i-button bind:click="handleClick" type="error" inline="ture" size="small" shape="circle" i-class="i-buttonLog">
+      分享
+      <i-icon type="share" size="18" color="#FFFFF"/>
+    </i-button>
+  </view>
+  <view class="textFirst">
+    <rich-text>
+      {{contentFirst}}
+    </rich-text>
+  </view>
+  <view class="image">
+    <image src="{{url}}"></image>
+  </view>
+  <view class="text">
+    <rich-text  wx:for="{{contentLast}}" wx:key="index">
+      {{item}}
+    </rich-text>
+  </view>
+  <view style="margin-bottom: 30rpx"></view>
+</view>

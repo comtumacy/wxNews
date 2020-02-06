@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<scroll-view>
+  <view class="container" wx:for="{{content}}" wx:key="index" bindtap="contentClick" data-item="{{item}}">
+    <view class="containerLeft">
+      <view class="title">
+        {{item.title}}
+      </view>
+      <view>
+        <text class="from">{{item.from}}</text>
+        <text class="readNumbers">{{item.read_numbers}}阅读</text>
+      </view>
+    </view>
+    <view class="containerRight">
+      <image src="{{item.photo_url}}"></image>
+    </view>
+    <view class="divider">
+      <i-divider></i-divider>
+    </view>
+  </view>
+  <view style="margin-bottom: 80rpx"></view>
+  <view>
+    <i-tab-bar current="{{ current }}" bindchange="tabBarClick" fixed="ture" i-class="i-tab-barLog">
+    <i-tab-bar-item key="news" icon="document" current-icon="document_fill" title="总会新闻"></i-tab-bar-item>
+    <i-tab-bar-item key="schoolView" icon="dynamic" current-icon="dynamic_fill" title="校园风采"></i-tab-bar-item>
+</i-tab-bar>
+  </view>
+</scroll-view>
+
+<i-toast id="toast" />

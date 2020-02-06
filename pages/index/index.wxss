@@ -1,0 +1,46 @@
+/**index.wxss**/
+.container {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.container .containerLeft{
+  margin-left: 30rpx;
+}
+
+.container .containerLeft .title{
+  height: 94rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 35rpx;
+}
+
+.container .containerLeft .from{
+  font-size: 28rpx;
+  color: rgb(153,153,153)
+}
+
+.container .containerLeft .readNumbers{
+  margin-left: 60rpx;
+  font-size: 28rpx;
+  color: rgb(153,153,153)
+}
+
+.container .containerRight image{
+  margin: 20rpx;
+  width: 250rpx;
+  height: 160rpx;
+}
+
+.container .divider{
+  position: absolute;
+  margin-top: 100rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  width: 95%
+}
+
+scroll-view view i-tab-bar .i-tab-barLog{
+  height: 130rpx
+}

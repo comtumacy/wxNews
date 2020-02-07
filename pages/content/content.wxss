@@ -10,6 +10,7 @@
 }
 
 .title .titleText{
+  margin-bottom: 20rpx;
   font-size: 40rpx
 }
 
@@ -47,7 +48,7 @@ i-button{
 }
 
 .textFirst rich-text{
-  text-indent: 1em
+  text-indent: 2em
 }
 
 .image image{

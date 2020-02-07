@@ -6,12 +6,6 @@ Page({
     current: 'news'
   },
 
-  tabBarClick: function (res) {
-    this.setData({
-      current: res.detail.key
-    });
-  },
-
   getContent: function () {
     wx.request({
       url: 'https://yitongli.cn/newsApi/get/news_get',
@@ -70,7 +64,7 @@ Page({
         content: '刷新成功',
         type: 'success'
       });
-    }, 2000)
+    }, 1000)
   },
 
   /**

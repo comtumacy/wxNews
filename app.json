@@ -12,5 +12,26 @@
     "onReachBottomDistance": 50
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+    "tabBar": {
+      "color": "#000000",
+      "selectedColor": "#333A3F",
+      "backgroundColor": "#F3F3F3",
+      "borderStyle": "white",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "总会新闻",
+          "iconPath": "iconPng/renew.png",
+          "selectedIconPath": "iconPng/renew_full.png"
+        },
+        {
+          "pagePath": "pages/Scenery/Scenery",
+          "text": "校友分会",
+          "iconPath": "iconPng/sub_account.png",
+          "selectedIconPath": "iconPng/sub_account_full.png"
+        }
+      ],
+      "position": "bottom"
+    }
 }

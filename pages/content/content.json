@@ -3,5 +3,6 @@
     "i-button": "../../iview/dist/button/index",
     "i-icon": "../../iview/dist/icon/index"
   },
-  "navigationBarTitleText": "新闻详情"
+  "navigationBarTitleText": "新闻详情",
+  "enablePullDownRefresh": false
 }

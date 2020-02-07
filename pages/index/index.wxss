@@ -41,6 +41,6 @@
   width: 95%
 }
 
-scroll-view view i-tab-bar .i-tab-barLog{
+/* scroll-view view i-tab-bar .i-tab-barLog{
   height: 130rpx
-}
+} */

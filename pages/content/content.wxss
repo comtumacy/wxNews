@@ -6,6 +6,7 @@
 }
 
 .title{
+  margin-bottom: 30rpx;
   margin-left: 20rpx
 }
 
@@ -42,7 +43,7 @@ i-button{
 
 .textFirst{
   margin-left: 20rpx;
-  margin-top: 10rpx;
+  margin-top: 40rpx;
   width: 95%
 }
 
@@ -52,7 +53,8 @@ i-button{
 
 .image image{
   margin-left: 20rpx;
-  margin-top: 15rpx;
+  margin-top: 25rpx;
+  margin-bottom: 15rpx;
   width: 95%
 }
 

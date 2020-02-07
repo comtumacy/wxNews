@@ -18,12 +18,12 @@
     </view>
   </view>
   <view style="margin-bottom: 80rpx"></view>
-  <view>
+  <!-- <view>
     <i-tab-bar current="{{ current }}" bindchange="tabBarClick" fixed="ture" i-class="i-tab-barLog">
     <i-tab-bar-item key="news" icon="document" current-icon="document_fill" title="总会新闻"></i-tab-bar-item>
-    <i-tab-bar-item key="schoolView" icon="dynamic" current-icon="dynamic_fill" title="校园风采"></i-tab-bar-item>
+    <i-tab-bar-item key="Scenery" icon="businesscard" current-icon="businesscard_fill" title="校友分会"></i-tab-bar-item>
 </i-tab-bar>
-  </view>
+  </view> -->
 </scroll-view>
 
 <i-toast id="toast" />

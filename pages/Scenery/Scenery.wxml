@@ -2,7 +2,8 @@
 <view>
   <text class="title">玉林师范学院校友分会（校友工作联络站）</text>
   <i-cell-group wx:for="{{city}}" wx:for-item="cityItem" wx:for-index="cityIndex" wx:key="cityItem">
-  <text class="title2">{{cityItem}}</text>
-    <i-cell title="{{nameItem}}" is-link wx:for="{{name[cityIndex]}}" wx:for-item="nameItem" wx:for-index="nameIndex" wx:key="nameIndex"></i-cell>
+  <!-- <text class="title2">{{cityItem}}</text> -->
+  <i-divider content="{{cityItem}}" size="18" height="30"></i-divider>
+    <i-cell title="{{nameItem}}" is-link wx:for="{{name[cityIndex]}}" wx:for-item="nameItem" wx:for-index="nameIndex" wx:key="nameIndex" bind:click="clickEven" data-cityItem="{{cityItem}}" data-nameIndex="{{nameItem}}"></i-cell>
 </i-cell-group>
 </view>

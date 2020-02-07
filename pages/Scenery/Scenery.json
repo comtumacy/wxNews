@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "i-cell-group": "../../iview/dist/cell-group/index",
-    "i-cell": "../../iview/dist/cell/index"
+    "i-cell": "../../iview/dist/cell/index",
+    "i-divider": "../../iview/dist/divider/index"
   },
   "navigationBarTitleText": "玉林师范学院校友分会"
 }

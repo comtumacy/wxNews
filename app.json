@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/Scenery/Scenery",
     "pages/index/index",
-    "pages/content/content",
-    "pages/Scenery/Scenery"
+    "pages/content/content"
   ],
   "window": {
     "backgroundTextStyle": "dark",

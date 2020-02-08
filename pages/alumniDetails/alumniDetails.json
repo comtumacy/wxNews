@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "i-card": "../../iview/dist/card/index",
+    "i-icon": "../../iview/dist/icon/index"
+  }
 }

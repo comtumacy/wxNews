@@ -6,7 +6,8 @@ Page({
    */
   data: {
     city: "",
-    name: ""
+    name: "",
+    content: []
   },
 
   /**
@@ -17,14 +18,22 @@ Page({
       city: res.city,
       name: res.name
     })
+    wx.setNavigationBarTitle({
+      title: res.name
+    })
     wx.request({
       url: 'https://yitongli.cn/newsApi/get/alumni_details_get',
       header: {
-        'content-type': 'application/json',
-        'name': res.name
+        'content-type': 'application/json'
       },
-      success(res) {
-        console.log(res.data)
+      data: {
+        'city_name': res.name
+      },
+      method: 'POST',
+      success:(res) =>{
+        this.setData({
+          content: res.data.content
+        })
       }
     })
   },

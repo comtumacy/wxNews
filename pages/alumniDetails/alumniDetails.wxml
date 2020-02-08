@@ -1,2 +1,7 @@
 <!--pages/alumniDetails/alumniDetails.wxml-->
-<text>{{city}}{{name}}</text>
+<view>
+  <text class="title">{{name}}详细名单</text>
+  <i-card title="{{item.name}}" extra="{{item.job}}" thumb="{{item.icon}}" i-class="i-cardLog" wx:for="{{content}}" wx:key="{{index}}">
+    <view slot="content">工作单位及职务:{{item.place}}</view>
+  </i-card>
+</view>

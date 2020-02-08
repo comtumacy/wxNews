@@ -1,1 +1,13 @@
 /* pages/alumniDetails/alumniDetails.wxss */
+
+.title{
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  display: block;
+  text-align: center;
+  font-size: 40rpx
+}
+
+i-card .i-cardLog{
+  margin-bottom: 20rpx
+}

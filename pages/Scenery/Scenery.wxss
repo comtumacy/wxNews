@@ -1,7 +1,8 @@
 /* pages/Scenery/Scenery.wxss */
 
 .title {
-  margin-bottom: 20rpx;
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
   display: block;
   text-align: center;
   font-size: 38rpx

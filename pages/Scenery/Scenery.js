@@ -49,7 +49,9 @@ Page({
   },
 
   clickEven: function(res) {
-    console.log(res)
+    wx.navigateTo({
+      url: `../alumniDetails/alumniDetails?city=${res.currentTarget.dataset.cityitem}&name=${res.currentTarget.dataset.nameindex}`
+    })
   },
   
   /**

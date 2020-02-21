@@ -1,1 +1,5 @@
-<view class="i-class i-col {{ span ? 'i-col-span-' + span : '' }} {{ offset ? 'i-col-offset-' + offset : '' }}"><slot></slot></view>
+<!-- 栅格布局ROW -->
+<!-- 通过span，offset设置栅格的占位格数，栅格左侧的间隔格数 -->
+<view class="i-class i-col {{ span ? 'i-col-span-' + span : '' }} {{ offset ? 'i-col-offset-' + offset : '' }}">
+  <slot></slot>
+</view>

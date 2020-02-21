@@ -1,11 +1,18 @@
+<!-- 卡片组件 -->
+<!-- full是否通栏，控制样式 -->
 <view class="i-class i-card {{ full ? 'i-card-full' : '' }}">
     <view class="i-class i-card-header">
         <view class="i-card-header-content">
+        <!-- thumb左侧缩略图 -->
             <image class="i-card-header-thumb" src="{{ thumb }}" mode="aspectFit" wx:if="{{ thumb }}" />
+            	<!-- title卡片标题 -->
             {{ title }}
         </view>
+        <!-- extra额外内容 -->
         <view class="i-card-header-extra" wx:if="{{ extra }}">{{ extra }}</view>
     </view>
+    <!-- 内容卡槽 -->
     <view class="i-class i-card-body"><slot name="content"></slot></view>
+    <!-- 尾部内容卡槽 -->
     <view class="i-class i-card-footer"><slot name="footer"></slot></view>
 </view>

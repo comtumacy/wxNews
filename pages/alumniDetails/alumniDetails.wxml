@@ -1,7 +1,8 @@
 <!--pages/alumniDetails/alumniDetails.wxml-->
 <view>
   <text class="title">{{name}}详细名单</text>
-  <i-card title="{{item.name}}" extra="{{item.job}}" thumb="{{item.icon}}" i-class="i-cardLog" wx:for="{{content}}" wx:key="{{index}}">
+  <i-card title="{{item.name}}" extra="{{item.job}}" thumb="{{item.icon}}" i-class="i-cardLog" wx:for="{{content}}" wx:key="{{index}}" wx:key="index">
     <view slot="content">工作单位及职务:{{item.place}}</view>
   </i-card>
+  <view style="height: 50rpx"></view>
 </view>

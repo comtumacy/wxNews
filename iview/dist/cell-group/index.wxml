@@ -1,3 +1,4 @@
+<!-- 列表父组件 -->
 <view class="i-class i-cell-group">
     <slot></slot>
 </view>

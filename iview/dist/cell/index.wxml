@@ -1,16 +1,24 @@
+<!-- 列表组件 -->
+<!-- is-link样式控制是否展示右侧箭头并开启尝试以 url 跳转 -->
+<!-- handleTap最外层点击事件 -->
 <view bindtap="handleTap" class="i-class i-cell {{ isLastCell ? 'i-cell-last' : '' }} {{ isLink ? 'i-cell-access' : '' }}">
-    <view class="i-cell-icon">
-        <slot name="icon"></slot>
-    </view>
-    <view class="i-cell-bd">
-        <view wx:if="{{ title }}" class="i-cell-text">{{ title }}</view>
-        <view wx:if="{{ label }}" class="i-cell-desc">{{ label }}</view>
-        <slot></slot>
-    </view>
-    <view catchtap="navigateTo" class="i-cell-ft">
-        <block wx:if="{{value}}">{{ value }}</block>
-        <block wx:else>
-            <slot name="footer"></slot>
-        </block>
-    </view>
+  <view class="i-cell-icon">
+  <!-- 标题前自定义的 icon，可使用 icon 自定义组件，具体使用参考 icon 组件 -->
+    <slot name="icon"></slot>
+  </view>
+  <view class="i-cell-bd">
+    <!-- title左侧内标题 label标题下方的描述信息-->
+    <view wx:if="{{ title }}" class="i-cell-text">{{ title }}</view>
+    <view wx:if="{{ label }}" class="i-cell-desc">{{ label }}</view>
+    <slot></slot>
+  </view>
+  <!-- value右侧内容 -->
+  <!-- navigateTo阻止冒泡的点击事件 -->
+  <view catchtap="navigateTo" class="i-cell-ft">
+    <block wx:if="{{value}}">{{ value }}</block>
+    <block wx:else>
+      <!-- 右侧自定义 wxml 内容，如果设置了 value 属性，则不生效 -->
+      <slot name="footer"></slot>
+    </block>
+  </view>
 </view>

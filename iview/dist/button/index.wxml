@@ -1,3 +1,6 @@
+<!-- 按钮组件 -->
+<!-- 样式设置，通过设置关键字选择类名 -->
+<!-- bingtap为函数统一入口 -->
 <button
     class="i-class i-btn {{ long ? 'i-btn-long' : '' }} {{ 'i-btn-' + size }} {{ 'i-btn-' + type }} {{ 'i-btn-' + shape }} {{ loading ? 'i-btn-loading' : '' }} {{ disabled ? 'i-btn-disabled' : ''}} {{ inline ? 'i-btn-inline' : '' }}"
     hover-class="i-btn-hover"

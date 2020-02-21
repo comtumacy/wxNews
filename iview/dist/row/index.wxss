@@ -1,1 +1,6 @@
-.i-row:after{content:"";display:table;clear:both}
+/* 表格布局，禁止浮动 */
+.i-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

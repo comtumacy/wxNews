@@ -1,1 +1,3 @@
+<!-- 图标组件 -->
+<!-- 名称，尺寸，颜色 -->
 <view class="i-class i-icon {{ type === '' ? '' : 'i-icon-' +  type }} {{ custom }}" style="font-size: {{ size }}px; {{ color ? 'color:' + color : '' }}"></view>

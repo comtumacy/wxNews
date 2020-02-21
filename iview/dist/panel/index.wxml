@@ -1,3 +1,6 @@
+<!-- 标题加显示内容框 -->
+<!-- 标题显示控制，是否将顶部距离置为 0样式控制 -->
+<!-- 边框是否显示样式控制 -->
 <view class="i-class i-panel">
     <view wx:if="{{ title }}" class="i-panel-title {{ hideTop ? 'i-panel-title-hide-top' : '' }}">{{ title }}</view>
     <view class="i-panel-content {{ hideBorder ? 'i-panel-without-border' : '' }}"><slot></slot></view>

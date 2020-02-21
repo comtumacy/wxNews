@@ -1,6 +1,7 @@
 Component({
+  // 自定义类名
     externalClasses: ['i-class'],
-
+  // 属性
     properties: {
         type: {
             type: String,
